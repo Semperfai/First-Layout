@@ -781,7 +781,7 @@ body .wrapper {
 	}
 }
 
-@media (max-width: 300.99px) {
+@media (max-width: 499.99px) {
 	.info-studios__list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -1095,6 +1095,14 @@ body .wrapper {
 	.page .fuji .fuji__info {
 		margin-right: 100px;
 	}
+
+	.page .fuji .text-item {
+		width: auto;
+		display: block;
+		margin-right: 70px;
+		margin-bottom: 50px;
+		margin-left: 5px;
+	}
 }
 
 @media (max-width: 399.98px) {
@@ -1109,13 +1117,7 @@ body .wrapper {
 		display: block;
 	}
 
-	.page .fuji .text-item {
-		width: auto;
-		display: block;
-		margin-right: 70px;
-		margin-bottom: 50px;
-		margin-left: 5px;
-	}
+
 
 	.page .fuji .fuji__info {
 		margin-right: 20px;
@@ -1305,6 +1307,14 @@ body .wrapper {
 	.page .monstera .monstera__info {
 		margin-right: 100px;
 	}
+
+	.page .monstera .text-item {
+		width: auto;
+		display: block;
+		margin-right: 70px;
+		margin-bottom: 50px;
+		margin-left: 10px;
+	}
 }
 
 @media (max-width: 399.98px) {
@@ -1319,13 +1329,6 @@ body .wrapper {
 		display: block;
 	}
 
-	.page .monstera .text-item {
-		width: auto;
-		display: block;
-		margin-right: 70px;
-		margin-bottom: 50px;
-		margin-left: 10px;
-	}
 
 	.page .monstera .monstera__info {
 		margin-right: 20px;
@@ -1445,6 +1448,14 @@ body .wrapper {
 	.page .himalayas .himalayas__info {
 		margin-right: 100px;
 	}
+
+	.page .himalayas .text-item {
+		width: auto;
+		display: block;
+		margin-right: 70px;
+		margin-bottom: 50px;
+		margin-left: 5px;
+	}
 }
 
 @media (max-width: 399.98px) {
@@ -1459,13 +1470,6 @@ body .wrapper {
 		display: block;
 	}
 
-	.page .himalayas .text-item {
-		width: auto;
-		display: block;
-		margin-right: 70px;
-		margin-bottom: 50px;
-		margin-left: 5px;
-	}
 
 	.page .himalayas .himalayas__info {
 		margin-right: 20px;
@@ -1599,6 +1603,10 @@ body .wrapper {
 	margin-top: 20px;
 }
 
+.navigation__link {
+	color: #FFFFFF;
+}
+
 .navigation__columns {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1660,6 +1668,11 @@ body .wrapper {
 	transition: all 1s ease-out;
 	-webkit-animation: 1s linear 0s infinite alternate subscribe;
 	animation: 1s linear 0s infinite alternate subscribe;
+}
+
+[class*="__link"]:hover {
+	color: turquoise;
+	animation: none;
 }
 
 .action__link {
@@ -1856,9 +1869,4 @@ body .wrapper {
 	.navigation__columns {
 		gap: 26px;
 	}
-}
-
-[class*="__link"]:hover {
-	color: turquoise;
-	animation: none;
 }
