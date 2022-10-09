@@ -142,14 +142,13 @@ body .wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-top: 10px;
+	padding: 20px;
 	gap: 340px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 	min-height: 90px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 25px;
 }
 
 .header__logo {
@@ -666,6 +665,7 @@ body .wrapper {
 }
 
 .areas__item {
+	margin-bottom: 15px;
 	overflow: hidden;
 }
 
@@ -762,6 +762,8 @@ body .wrapper {
 	}
 
 	.item__button .button-body img {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		width: 10%;
 	}
 
@@ -845,6 +847,8 @@ body .wrapper {
 	}
 
 	.button-body img {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		width: 10%;
 	}
 
@@ -1206,11 +1210,11 @@ body .wrapper {
 
 	.page .clients__title {
 		font-size: 25px;
-		margin-bottom: 0px;
+		margin-bottom: 10px;
 	}
 
 	.page .clients__subtitle {
-		margin-bottom: 15px;
+		margin-bottom: 45px;
 	}
 
 	.page .clients__items {
@@ -1480,23 +1484,36 @@ body .wrapper {
 	color: #FFFFFF;
 }
 
+.action__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .action__text {
 	font-size: 13px;
 	line-height: 20px;
 	color: #C0C0C0;
+	margin-bottom: 10px;
 }
+
 
 .action__button {
 	padding: 5px 0px;
-	width: 458px;
+	width: 358px;
+	margin-left: 20px;
 	background: #F9FAFB;
 	border: 1px solid #E5E7EB;
 	border-radius: 12px;
 	-webkit-transition: all 1s ease-out;
 	-o-transition: all 1s ease-out;
 	transition: all 1s ease-out;
-	-webkit-animation: 1s linear 0s infinite alternate subscribe;
-	animation: 1s linear 0s infinite alternate subscribe;
+}
+
+.action__link {
+	display: flex;
+}
+
+.action__link img {
+	margin-left: 10px;
 }
 
 [class*="__link"]:hover {
@@ -1504,66 +1521,12 @@ body .wrapper {
 	animation: none;
 }
 
-.action__link {
-	margin-left: 85%;
-}
 
 .action__button:hover {
 	background-color: #a0bfa6;
 }
 
-.action__link:active {
-	-webkit-animation-name: sucsribebutton;
-	animation-name: sucsribebutton;
-	-webkit-animation-duration: 0.1s;
-	animation-duration: 0.1s;
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
-	-webkit-animation-delay: 0s;
-	animation-delay: 0s;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-	-webkit-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-}
 
-@-webkit-keyframes subscribe {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-
-	100% {
-		-webkit-box-shadow: 5px 5px 16px 7px #7e7979, -5px -5px 16px 7px #7e7979;
-		box-shadow: 5px 5px 16px 7px #7e7979, -5px -5px 16px 7px #7e7979;
-		border: 1px solid black;
-		position: relative;
-		top: -1px;
-		left: 1px;
-		background-color: white;
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-}
-
-@keyframes subscribe {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-
-	100% {
-		-webkit-box-shadow: 5px 5px 16px 7px #7e7979, -5px -5px 16px 7px #7e7979;
-		box-shadow: 5px 5px 16px 7px #7e7979, -5px -5px 16px 7px #7e7979;
-		border: 1px solid black;
-		position: relative;
-		top: -1px;
-		left: 1px;
-		background-color: white;
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-}
 
 .pages {
 	margin-top: 56px;
@@ -1582,38 +1545,12 @@ body .wrapper {
 	gap: 20px;
 }
 
-@-webkit-keyframes sucsribebutton {
-	from {
-		margin-left: 85%;
-	}
-
-	to {
-		margin-left: 3%;
-	}
-}
-
-@keyframes sucsribebutton {
-	from {
-		margin-left: 85%;
-	}
-
-	to {
-		margin-left: 3%;
-	}
-}
 
 @media (max-width: 800.99px) {
 	.footer__navigation {
 		gap: 20px;
 	}
 
-	.action__link {
-		margin-left: 80%;
-	}
-
-	.footer__action {
-		gap: 10px;
-	}
 
 	.footer__pages {
 		text-align: center;
@@ -1625,21 +1562,7 @@ body .wrapper {
 	}
 }
 
-@media (max-width: 540.99px) {
-	.footer__navigation {
-		gap: 20px;
-	}
-
-	.action__link {
-		margin-left: 70%;
-	}
-
-	.footer__action {
-		gap: 10px;
-	}
-}
-
-@media (max-width: 400.99px) {
+@media (max-width: 640.99px) {
 	.footer__navigation {
 		gap: 20px;
 		-webkit-box-orient: vertical;
@@ -1648,25 +1571,23 @@ body .wrapper {
 		flex-direction: column;
 	}
 
-	.action__link {
-		margin-left: 70%;
+	.navigation__columns {
+		justify-content: space-between;
 	}
+
+
+}
+
+@media (max-width: 400.99px) {
+
 
 	.action__button {
 		max-width: 158px;
 		border-radius: 12px;
 	}
 
-	.action__link {
-		margin-left: 70%;
-	}
-
-	.action__link img {
-		max-width: 30%;
-	}
-
-	.navigation__columns {
-		gap: 26px;
+	.navigation__list {
+		font-size: 12px;
 	}
 }
 
@@ -1687,15 +1608,4 @@ body .wrapper {
 		text-align: center;
 	}
 
-	.action__link {
-		margin-left: 70%;
-	}
-
-	.action__link img {
-		max-width: 30%;
-	}
-
-	.navigation__columns {
-		gap: 26px;
-	}
 }
