@@ -428,6 +428,10 @@ body .wrapper {
 	color: #000000;
 }
 
+.button-body img {
+	width: 20%;
+}
+
 .button-body:hover {
 	-webkit-animation: 1s ease-out 0s infinite button;
 	animation: 1s ease-out 0s infinite button;
@@ -657,6 +661,8 @@ body .wrapper {
 }
 
 .areas__items {
+	-ms-display: flex;
+	-ms-flex-wrap: wrap;
 	display: grid;
 	grid-template-columns: repeat(2, minmax(100px, 576px));
 	margin-right: 81px;
@@ -916,9 +922,6 @@ body .wrapper {
 }
 
 @media (max-width: 499.98px) {
-	.page .fuji .title-item {
-		margin: 150px 70px 50px 0px;
-	}
 
 	.page .fuji .text-item {
 		margin-right: 70px;
@@ -1562,7 +1565,7 @@ body .wrapper {
 	}
 }
 
-@media (max-width: 640.99px) {
+@media (max-width: 820.99px) {
 	.footer__navigation {
 		gap: 20px;
 		-webkit-box-orient: vertical;
@@ -1572,7 +1575,7 @@ body .wrapper {
 	}
 
 	.navigation__columns {
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 
