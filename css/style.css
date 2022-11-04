@@ -230,8 +230,8 @@ body .wrapper {
 	}
 
 	100% {
-		-webkit-box-shadow: 0px 0px 5px 2px #f0ecec, 0px 0px 5px 2px #dfdbdb;
-		box-shadow: 0px 0px 5px 2px #e2dddd, 0px 0px 5px 2px #cfcccc;
+		-webkit-box-shadow: 0px 0px 3px 2px #459da3, 0px 0px 3px 2px #59cbcf;
+		box-shadow: 0px 0px 22px 2px #51a5a5, 0px 0px 22px 2px #4b9b9b;
 		-webkit-transform: scale(1.05);
 		transform: scale(1.05);
 	}
