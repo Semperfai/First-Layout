@@ -194,14 +194,15 @@ body .wrapper {
 	line-height: 45px;
 	border-radius: 14px;
 	border: 1px solid black;
-	-webkit-animation: 1s linear 0s infinite alternate getemplate;
-	animation: 1s linear 0s infinite alternate getemplate;
+	-webkit-animation: 2s linear 0s infinite alternate getemplate;
+	animation: 2s linear 0s infinite alternate getemplate;
 }
 
 .menu_link_get:hover {
 	background: turquoise;
 	animation: none;
 	color: black;
+
 }
 
 .menu_link_get:active {
@@ -211,13 +212,28 @@ body .wrapper {
 
 @-webkit-keyframes getemplate {
 	0% {
+		background: #19dcea;
+	}
+
+	33.3333% {
+		background: #b22cff;
+	}
+
+	66.666% {
+		background: #ea2222;
+	}
+
+	100% {
+		background: #f5be10;
+	}
+
+	0% {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
 	100% {
-		-webkit-box-shadow: 0px 0px 5px 2px #f0ecec, 0px 0px 5px 2px #dfdbdb;
-		box-shadow: 0px 0px 3px 2px #e2dddd, 0px 0px 7px 2px #cfcccc;
+
 		-webkit-transform: scale(1.05);
 		transform: scale(1.05);
 	}
@@ -225,17 +241,36 @@ body .wrapper {
 
 @keyframes getemplate {
 	0% {
+		background: #19dcea;
+	}
+
+	33.3333% {
+		background: #b22cff;
+	}
+
+	66.666% {
+		background: #ea2222;
+	}
+
+	100% {
+		background: #f5be10;
+	}
+
+	0% {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
 	100% {
-		-webkit-box-shadow: 0px 0px 3px 2px #459da3, 0px 0px 3px 2px #59cbcf;
-		box-shadow: 0px 0px 22px 2px #51a5a5, 0px 0px 22px 2px #4b9b9b;
 		-webkit-transform: scale(1.05);
 		transform: scale(1.05);
 	}
 }
+
+
+
+
+
 
 @media (max-width: 1250.99px) {
 	.header__container {
@@ -407,6 +442,8 @@ body .wrapper {
 	line-height: 42px;
 	background: #FFFFFF;
 	border-radius: 14px;
+	-webkit-animation: 1s ease-out 0s infinite button;
+	animation: 1s ease-out 0s infinite alternate button;
 }
 
 .button-body span {
@@ -420,8 +457,8 @@ body .wrapper {
 }
 
 .button-body:hover {
-	-webkit-animation: 1s ease-out 0s infinite button;
-	animation: 1s ease-out 0s infinite button;
+	-webkit-animation: 2s linear 0s infinite alternate getemplate;
+	animation: 2s linear 0s infinite alternate getemplate;
 }
 
 .button-body:active {
