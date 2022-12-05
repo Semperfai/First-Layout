@@ -188,6 +188,53 @@ body .wrapper {
 	display: none;
 }
 
+.snow1 {
+	display: none;
+	background-image: url('../img/tools/snow1.png');
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: snow1 18s linear infinite;
+}
+
+
+.snow2 {
+	display: none;
+	background-image: url('../img/tools/snow2.png'), url('../img/tools/snow3.png');
+	animation: snow2 25s linear infinite;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+@keyframes snow2 {
+	0% {
+		background-position: 0 0, 0 0;
+	}
+
+	100% {
+		background-position: 10% 600px, 10% 600px;
+	}
+}
+
+@keyframes snow1 {
+	from {
+		background-position: 0 -300px;
+	}
+
+	20% {
+		background-position: 20% -100px;
+	}
+
+	40% {
+		background-position: 30% 100px;
+	}
+
+	to {
+		background-position: 20% 700px;
+	}
+}
+
 
 @-webkit-keyframes getemplate {
 	0% {
@@ -518,6 +565,27 @@ body .wrapper {
 		font-size: 15px;
 		padding: 0px 20px;
 		width: 100%;
+	}
+
+	.snow1 {
+		display: block;
+		background-image: url('../img/tools/snow1.png');
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		animation: snow1 18s linear infinite;
+		z-index: -5;
+	}
+
+
+	.snow2 {
+		display: block;
+		background-image: url('../img/tools/snow2.png'), url('../img/tools/snow3.png');
+		animation: snow2 25s linear infinite;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -5;
 	}
 }
 
