@@ -1,4 +1,4 @@
-const modals = () => {
+const modules = () => {
 	function headerScroll() {
 		const header = document.querySelector('.header');
 		(window.scrollY > header.style.height) ? header.classList.add('scroll-header') : header.classList.remove('scroll-header');
@@ -195,4 +195,4 @@ const modals = () => {
 	})
 }
 
-export default modals;
+export default modules;
