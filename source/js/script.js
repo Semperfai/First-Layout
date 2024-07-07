@@ -1,4 +1,4 @@
-import modals from './modals.js'
+import modules from './modules.js'
 window.addEventListener('DOMContentLoaded', (event) => {
-	modals()
+	modules()
 });
